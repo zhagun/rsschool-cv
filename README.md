@@ -1,1 +1,1 @@
-# rsschool-cv
+https://zhagun.github.io/rsschool-cv/cv
