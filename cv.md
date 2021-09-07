@@ -45,6 +45,8 @@ __Yanka Kupala State University__ Information Technologies Software
 ## __Languages:__
 - Russian (native)
 - English (А2)
+
+
 ## __Hobbies:__
 Traveling, cybersport
 
