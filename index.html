@@ -5,7 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
         <link rel="stylesheet" href="asstes/css/styles.css">
-
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
         <title>Zhagun Pavel CV</title>
     </head>
     <body>
@@ -47,13 +49,8 @@
                         </li>
 
                         <li class="nav__item">
-                            <a href="#certificates" class="nav__link">
-                                <i class="bx bx-award nav__icon"></i>Certificates
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#references" class="nav__link">
-                                <i class="bx bx-link-external nav__icon"></i>References
+                            <a href="#code" class="nav__link">
+                                <i class="bx bx-award nav__icon"></i>Code
                             </a>
                         </li>
                     </ul>
@@ -97,6 +94,7 @@
                         <div class="socials__container bd-grid">
                             <a href="https://github.com/zhagun" target="_blank" class="social__link">
                                 <i class='bx bxl-github social__icon' ></i> zhagun
+                               
                             </a>
                            
                         </div>
@@ -139,6 +137,71 @@
                         </div>
                     </section>
 
+                    
+
+                </div>
+
+                <div class="resume__right">
+                   
+                    <section class="experience section" id="experience">
+                        <h2 class="section__title">EXPERIENCE</h2>
+
+                        <div class="experience__container bd-grid">
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">System Administrator</h3>
+                                    <span class="experience__company">JSC “Shchuchin plant “Avtoprovod”</span>
+                                    <span class="experience__year">From 2015 to 2018</span>
+                                   
+                                </div>
+                            </div>
+
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                          
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">Front-End developer</h3>
+                                    <span class="experience__company">Velox Imaging</span>
+                                    <span class="experience__year">2018 - present</span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="code section" id="code">
+                        <h2 class="section__title">CODE EXAMPLE</h2>
+<div class="code__container bd-grid">
+<div class="code__content">
+    <h3 class="code__title">Task from the
+        <a href="https://www.codewars.com/kata/57e5a6a67fbcc9ba900021cd" target="_blank" class="social__link">
+             Codewars
+            
+        </a> </h3>
+<pre>
+<code class="JavaScript">
+function arrayToTree(values, i = 0) {
+if (i >= values.length) return;
+return new TreeNode(
+    values[i],
+    arrayToTree(values, 2 * i + 1),
+    arrayToTree(values, 2 * i + 2)
+);
+}
+</code>
+</pre>
+</div>
+</div>
+                    </section>
                     <section class="skills section" id="skills">
                         <h2 class="section__title">SKILLS</h2>
 
@@ -169,37 +232,60 @@
                         </div>
                     </section>
 
-                </div>
-
-                <div class="resume__right">
-                    <!--========== EXPERIENCE ==========-->
-                    <section class="experience section" id="experience">
-                        
-                    </section>
-
-                    <!--========== CERTIFICATES ==========-->
-                    <section class="certificate section" id="certificates">
-                        
-                    </section>
-
-                    <!--========== REFERENCES ==========-->
-                    <section class="references section" id="references">
-                        
-                    </section>
-
-                    <!--========== LANGUAGES ==========-->
                     <section class="languages section">
-                        
+                        <h2 class="section__title">LANGUAGES</h2>
+
+                        <div class="languages__container">
+                            <ul class="languages__content bd-grid">
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span> Russian (native)
+                                </li>
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span> English (А2)
+                                </li>
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span> Polish (B1)
+                                </li>
+                            </ul>
+                        </div>
                     </section>
                     
-                    <!--========== INTERESTS ==========-->
-                    <section class="interests section">
-                        
+               
+                    <section class="hobbies section">
+                        <h2 class="section__title">HOBBIES</h2>
+
+                        <div class="hobbies__container bd-grid">
+                            <div class="hobbies__content">
+                                <i class='bx bxs-plane hobbies__icon'></i>
+                                <span class="hobbies__name">Traveling</span>
+                            </div>
+                            <div class="hobbies__content">
+                                <i class='bx bx-headphone hobbies__icon' ></i>
+                                <span class="hobbies__name">Music</span>
+                            </div>
+                            <div class="hobbies__content">
+                                <i class='bx bx-joystick hobbies__icon'></i>
+                                <span class="hobbies__name">Cybersport</span>
+                            </div>
+                        </div>
                     </section>
+                    <footer class="l-footer bd-container">
+                        <div class="footer__container ">
+                            <div class="footer__content bd-grid">
+                                <span class="footer__year">2021</span>
+                                <a  href="https://rs.school/js/" target="_blank" class="footer__link">
+                                    <img src="/asstes/img/rs_school_logo.svg" class="footer__logo" alt="rs_school_logo">
+                                  </a>
+                            </div>
+                        </div>
+                    </footer>
                 </div>
             </div>        
         </main>
-
+        
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon' ></i>
+        </a>
 
       
         <script src="asstes/js/main.js"></script>
