@@ -47,7 +47,7 @@ function scrollTop(){
     if(this.scrollY >= 200) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollTop)
-const mark = `Ваша оценка - 125 баллов 
+const mark = `Моя оценка - 125 баллов 
 Отзыв по пунктам ТЗ:
 Не выполненные/не засчитанные пункты:
 1) перечень выполненных учебных проектов со ссылками на исходный код или страницу приложения 
